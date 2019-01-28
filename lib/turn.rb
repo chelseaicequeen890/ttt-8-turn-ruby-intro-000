@@ -9,7 +9,7 @@ end
 def valid_move?(input)
   if input.between(0,8)
     true
-  else 
+  else
     false
   end
 end
