@@ -29,7 +29,7 @@ def valid_move?(board, index)
 end
 
 def input_to_index(usernum)
-  index = usernum - 1
+  index = usernum.to_i - 1
   return index
 end
 
