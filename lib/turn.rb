@@ -6,12 +6,21 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def valid_move?(input)
-  if input.between(0,8)
-    true
-  else
-    false
-  end
+def valid_move?(board, index)
+  def position_taken?(array, input)
+    if (array[input] == "X" || array[input] == "O")
+      true
+    else
+      false
+    end
+
+  def on_board?(num)
+    if num.between(0, 8) == true
+      true
+    else
+      false
+    end
+end
 end
 
 def turn
