@@ -28,5 +28,7 @@ def valid_move?(board, index)
   end
 end
 
-def turn
+def input_to_index(usernum)
+  index = usernum - 1
+  return index
 end
