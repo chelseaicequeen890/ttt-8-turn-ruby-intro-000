@@ -20,7 +20,12 @@ def valid_move?(board, index)
     else
       false
     end
-end
+
+  if (position taken(board, index) == false && on_board(index) == true)
+    true
+  else
+    false
+  end
 end
 
 def turn
