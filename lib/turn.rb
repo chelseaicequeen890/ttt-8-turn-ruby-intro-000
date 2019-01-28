@@ -29,7 +29,8 @@ def valid_move?(board, index)
 end
 
 def input_to_index(usernum)
-  puts index = usernum - 1
+  index = usernum - 1
+  return index
 end
 
 def move(board, index, char = "X")
