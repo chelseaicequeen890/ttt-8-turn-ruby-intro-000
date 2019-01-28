@@ -9,13 +9,6 @@ end
 def valid_move?(input)
   if input.between(0,8)
     true
-      def position_taken?(board, index)
-        if board[index] == "X" || board[index] == "O"
-          true
-        else
-          false
-        end
-      end
   end
 
 def turn
