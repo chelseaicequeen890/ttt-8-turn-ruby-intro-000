@@ -9,7 +9,10 @@ end
 def valid_move?(input)
   if input.between(0,8)
     true
+  else 
+    false
   end
+end
 
 def turn
 end
