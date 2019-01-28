@@ -33,7 +33,8 @@ def input_to_index(usernum)
 end
 
 def move(board, index, char = "X")
-  puts board[index] = character
+  board[index] = character
+  return board
 end
 
 def turn (board)
