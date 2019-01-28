@@ -16,10 +16,10 @@ end
 #checks the number to see if 1) the position is already taken and 2)it is an actual number
 def valid_move?(board, index)
   def position_taken?(array, ind)
-    if array[ind] == " " || array[ind] == "" || array[ind] == nil
-      return false
-    else
+    if array[ind] == "X" || array[ind] == "O"
       return true
+    else
+      return false
     end
   end
 
