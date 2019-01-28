@@ -37,5 +37,12 @@ def move(board, index, char = "X")
 end
 
 def turn(board)
-  bjbj
+  puts "Please enter a number from 1-9"
+  num = gets.chomp
+  index = input_to_index(num)
+  if valid_move?(board, index) == true
+    move(board, index)
+    display_board(board)
+  else
+    turn(board)
 end
